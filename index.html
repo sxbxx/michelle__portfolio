@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michelle Buyn </title>
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="../css/master.css">
     <!-- -------------------------- fonts + libaries --------------------------- -->
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
@@ -15,23 +15,33 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
+
+    <!-- ------------ Global site tag (gtag.js) - Google Analytics ------------- -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTL27P3GQ9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TTL27P3GQ9');
+    </script>
     <!-- ------------------------------- favicon ------------------------------- -->
-    <link rel="icon" type="image/png" href="img/01_favicon.png">
+    <link rel="icon" type="image/png" href="../assets/01_favicon.png">
 </head>
 
 <body>
     <div class="wrapper">
         <div id="particles-js">
-            <div class="content">
+            <div class="content index">
                 <h1>About</h1>
                 <h2><span class="hover link_michelle">Michelle Buyn</span> is a Junior UI Designer.</h2>
                 <h2>Borned and raised in <span class="hover link_xian">Tauranga</span>,
-                    <h2>She enjoys <span class="hover link_cat" target="_blank">graphic design</span> and is also
+                    <h2>I enjoy <span class="hover link_cat" target="_blank">graphic design</span> and is also
                         an
                         amateur <a class="hover link_film" href="https://www.instagram.com/elanofx/"
                             target="_blank">photographer</a> shooting both digital and film.</h2>
-                    <h2>She is always down to collaborate.</h2>
+                    <h2>I am always down to collaborate.</h2>
                     <h3><a class="hover link_projects" href="projects.html">Check out some of my work.</a> </h3>
 
                     <h1>Elsewhere</h1>
@@ -47,13 +57,13 @@
 
     <!-- -------------------------- image hover links -------------------------- -->
 
-    <img src="img/xinyu.jpg" class="img img_michelle" style="display: none;">
-    <img src="img/cat.jpg" class="img img_cat" style="display: none;">
-    <img src="../img/ranger/01__ranger.png" class="img img_projects" style="display: none;">
+    <img src="../assets/xinyu.jpg" class="img img_michelle" style="display: none;">
+    <img src="../assets/cat.jpg" class="img img_cat" style="display: none;">
+    <img src="../assets/ranger/01__ranger.png" class="img img_projects" style="display: none;">
 
     <!-- ------------------------- particles js libary ------------------------- -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="particles.js"></script>
+    <script src="../js/particles.js"></script>
 </body>
 
 </html>

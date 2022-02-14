@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michelle Buyn </title>
-    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="../css/master.css">
     <!-- -------------------------- fonts + libaries --------------------------- -->
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
@@ -15,29 +15,143 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
+    <script src="../js/script.js"></script>
     <!-- ------------------------------- favicon ------------------------------- -->
-    <link rel="icon" type="image/png" href="../img/01_favicon.png">
+    <link rel="icon" type="image/png" href="../assets/01_favicon.png">
 </head>
 
 <body>
     <div class="wrapper">
-        <div id="particles-js">
-            <div class="content">
-                <h1>About</h1>
-                <h2><span class="hover link_michelle">Michelle Buyn</span> is a Junior UI Designer.</h2>
-                <h2>Borned and raised in <span class="hover link_xian">Tauranga</span>,
-                    <h2>She enjoys <span class="hover link_cat" target="_blank">graphic design</span> and is also
-                        an
-                        amateur <a class="hover link_film" href="https://www.instagram.com/elanofx/"
-                            target="_blank">photographer</a> shooting both digital and film.</h2>
-                    <h2>She is always down to collaborate.</h2>
-                    <h3><a class="hover link_projects" href="projects.html">Check out some of my work.</a> </h3>
+        <div id="particles-js"></div>
 
-                    <h1>Elsewhere</h1>
-                    <p><a href="mailto:michellebuyn@gmail.com">Email</a> · <a
-                            href="https://www.instagram.com/michellebuyn/" target="_blank">Instagram · <a
-                                href="https://www.linkedin.com/in/michelle-buyn/" target="_blank">LinkedIn</a></p>
+
+        <div class="content">
+
+            <div class="content_wrapper">
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!-- ------------------------ fixed left navigation ------------------------ -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <div class="project_left">
+                    <div>
+                        <h1>Mobile Application</h1>
+                        <h2>Ranger</h2>
+                        <p>A walking app with a goal to promote the local walkways and hiking tracks around the Waikato
+                            region.
+                        </p>
+
+                        <a class="red"
+                            href="https://xd.adobe.com/view/091d5a8d-3ac6-414d-9d63-28f9e55e925f-5c4e/screen/7a401649-fa50-4c5b-8633-eac224b51f52/">Interact
+                            with the live prototype here</a>
+
+                    </div>
+
+                    <!-- --------------------------- go back button ---------------------------- -->
+                    <div class="go_home">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <h1>
+                            <a href="../projects.html">go back</a>
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!-- ---------------------- main content - right side ---------------------- -->
+                <!-- ----------------------------------------------------------------------- -->
+                <div class="project_right">
+
+                    <div class="project_cover ranger_cover"></div>
+
+                    <div class="project_description">
+
+                        <div>
+                            <h6>Role</h6>
+                            <p>Product Designer</p>
+                        </div>
+                        <div>
+                            <h6>Software Used</h6>
+                            <p>Adobe XD</p>
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------------------------------------------------- -->
+                    <!--                                overview                                 -->
+                    <!-- ----------------------------------------------------------------------- -->
+
+                    <div class="container">
+
+                        <h2>Overview</h2>
+                        <p>Walking and hiking is a popular tourist activity which offers tourists a unique experience to
+                            get‘up close and personal’ with New Zealand’s stunningly diverse and impressive landscapes.
+                        </p>
+
+                        <p>Waikato Region has some famous and amazing walking tracks that some may remain undiscovered
+                            from some people. I wanted to tackle this problem by finding a solution that would encourage
+                            locals
+                            and tourists to discover new tracks.</p>
+
+                        <div class="blockquote">
+                            <p>
+                                <q>Typically one in four holiday visitors during the last five years participated in a
+                                    walking or hiking activity during their visit to New Zealand. This equates to over a
+                                    million international visitors, at an average of 254,000 per year.</q>
+                                <a class="red"
+                                    href="https://www.tourismnewzealand.com/media/1768/tourism-profile-walking-and-hiking.pdf"><cite>Tourism
+                                        New Zealand<cite></a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="section">
+
+                        <h3>Understanding the users— Personas Development</h3>
+                        <p>We created three personas during our user research phase. We determined there were two main
+                            groups of hikers.</p>
+
+                        <h4>Group 1 - The Beginner Hiker. </h4>
+                        <p>Interested in hiking, but feels overwhelmed and unfamiliar because
+                            this person never went on a hike before.</p>
+
+                        <img class="project_img" src="../assets/ranger/ranger_rachel_persona.png" alt="">
+
+                        <h4>Group 2 - The Experienced Hiker.</h4>
+                        <p>Already went on a few hikes and feels comfortable hiking. This
+                            person is looking for a hiking community to get involved with and to share their experience
+                            and
+                            stories.</p>
+
+                        <img class="project_img" src="../assets/ranger/ranger_josh_persona.png" alt="">
+
+                        <p>
+                            We wanted the website to be streamlined so we chose to focus on making the best site for
+                            beginner hikers (group 1). We started researching the pain points of new hikers. Here's what
+                            we found:
+                        </p>
+
+                        <p>
+                            <b>New hikers don't know where to go to find a good hiking trail.</b>
+                            <br>They want to feel like they're getting a custom trail suggested for their needs.
+                        </p>
+
+                        <p>
+                            <b>Feel Uninformed.</b>
+                            <br>New hikers know they're uninformed about hiking, and they want to have a
+                            better understanding of what to expect before going on their first hike.
+                        </p>
+
+                        <img class="project_img w_80" src="../assets/ranger/ranger_brainstorm.png" alt="">
+
+
+                    </div>
+
+
+                </div>
             </div>
 
 
@@ -47,13 +161,13 @@
 
     <!-- -------------------------- image hover links -------------------------- -->
 
-    <img src="img/xinyu.jpg" class="img img_michelle" style="display: none;">
-    <img src="img/cat.jpg" class="img img_cat" style="display: none;">
-    <img src="../img/ranger/01__ranger.png" class="img img_projects" style="display: none;">
+    <img src="../assets/xinyu.jpg" class="img img_michelle" style="display: none;">
+    <img src="../assets/cat.jpg" class="img img_cat" style="display: none;">
+    <img src="../assets/ranger/01__ranger.png" class="img img_projects" style="display: none;">
 
     <!-- ------------------------- particles js libary ------------------------- -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="../particles.js"></script>
+    <script src="../js/particles.js"></script>
 </body>
 
 </html>

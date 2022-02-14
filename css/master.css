@@ -2,6 +2,7 @@
   --red: #ff2851;
   --white: #fff;
   --black: #282828;
+  --lightgray: #e5e5e5;
 }
 ::selection {
   background: var(--black);
@@ -10,7 +11,7 @@
 
 ::-moz-selection {
   background: var(--black);
-  color: #fff;
+  color: var(--white);
 }
 
 body {
@@ -46,9 +47,7 @@ a:hover,
 }
 
 .content {
-  left: 10%;
-  top: 10%;
-  right: 10%;
+  margin: 10%;
   position: absolute;
 }
 
@@ -61,8 +60,6 @@ h1 {
   font-size: 14px;
   line-height: 1.4;
   margin-top: 60px;
-  max-width: 600px;
-  width: 80%;
   color: var(--red);
 }
 
@@ -71,8 +68,6 @@ h2 {
   font-weight: 100;
   line-height: 1.5;
   margin-top: 8px;
-  max-width: 600px;
-  width: 80%;
 }
 
 h3 {
@@ -80,14 +75,30 @@ h3 {
   font-weight: 100;
   line-height: 1.5;
   margin-top: 62px;
-  max-width: 600px;
+}
+h6 {
+  font-size: 14px;
+  margin: 0;
 }
 
 p {
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+ul {
+  margin: 120px 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+
+  margin-bottom: 28px;
+}
+br {
+  line-height: 2;
 }
 
 .img {
@@ -98,6 +109,30 @@ p {
   opacity: 0.9;
   position: fixed;
   top: 15%;
+}
+.blockquote {
+  padding: 10px;
+  background-color: var(--lightgray);
+}
+
+.blockquote p {
+  margin: 20px;
+}
+cite {
+  font-size: 12px;
+}
+
+.red {
+  font-size: 14px;
+  color: var(--red);
+}
+.red:hover {
+  border-color: var(--red);
+  border-style: solid;
+  border-width: 0 0 3px;
+}
+.m_100 {
+  margin-top: 100px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -114,7 +149,7 @@ p {
 }
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -123,9 +158,15 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  overflow: hidden;
 }
 
-.home {
+.index {
+  max-width: 600px;
+  width: 80%;
+}
+
+.go_home {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -137,8 +178,80 @@ i {
   color: var(--red);
 }
 
-.home h1:hover {
-  translate: 2px;
+.go_home h1:hover {
+}
+
+.container {
+  margin: 100px 0;
+}
+
+.section {
+  margin-top: 200px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  projects                                  */
+/* -------------------------------------------------------------------------- */
+
+.content_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content_wrapper p {
+}
+
+.project_left {
+  height: 70vh;
+  width: 15%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_nav {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_right {
+  margin-left: 32%;
+  margin-bottom: 10vh;
+  overflow: hidden;
+}
+
+.project_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project_img {
+  margin: 5% 0;
+  width: 100%;
+}
+.project_cover {
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 100px;
+}
+
+/* -------------------------- project cover images -------------------------- */
+
+.ranger_cover {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://cdn.dribbble.com/users/2522172/screenshots/15330043/media/ece0c11425d84d070bb82153ebcb0007.png?compress=1&resize=1000x750&vertical=top);
+}
+
+.athlete_cover {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://cdn.dribbble.com/users/5963189/screenshots/15500536/media/25ce5cb228235135d5a5cabcecd1be08.png?compress=1&resize=1600x1200&vertical=top);
 }
 
 /* -------------------------------------------------------------------------- */
