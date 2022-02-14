@@ -178,9 +178,6 @@ i {
   color: var(--red);
 }
 
-.go_home h1:hover {
-}
-
 .container {
   margin: 100px 0;
 }
@@ -197,9 +194,6 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.content_wrapper p {
 }
 
 .project_left {
