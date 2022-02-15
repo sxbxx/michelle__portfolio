@@ -182,6 +182,9 @@ i {
   margin: 100px 0;
 }
 
+.container p {
+  width: 60%;
+}
 .section {
   margin-top: 200px;
 }
@@ -205,17 +208,16 @@ i {
   justify-content: space-between;
 }
 
+.project_right {
+  margin-left: 32%;
+  margin-bottom: 10vh;
+  overflow: hidden;
+}
 .project_nav {
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.project_right {
-  margin-left: 32%;
-  margin-bottom: 10vh;
-  overflow: hidden;
 }
 
 .project_description {
@@ -258,12 +260,39 @@ i {
   }
 }
 
-@media only screen and (max-height: 702px) {
-  .experiences {
-    margin-top: 140px;
-    font-size: 14px;
-    font-weight: 400;
-    position: relative;
+@media only screen and (max-width: 768px) {
+  #particles-js {
+    display: none;
+  }
+
+  .content_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project_left {
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    position: static;
+  }
+
+  .project_right {
+    margin: 5vh 0 10vh 0;
+    width: 100%;
+  }
+
+  .go_home {
+    display: none;
+  }
+
+  .project_cover {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 0;
+  }
+  .content_wrapper p {
+    width: 100%;
   }
 }
 
