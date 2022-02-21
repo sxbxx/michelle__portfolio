@@ -19,13 +19,15 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  letter-spacing: -0.3;
   color: var(--black);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+.section {
+  margin: 0 0 100px 0;
 }
 
 .hover {
@@ -76,8 +78,16 @@ h3 {
   line-height: 1.5;
   margin-top: 62px;
 }
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 h6 {
   font-size: 14px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -94,21 +104,34 @@ ul {
 }
 li {
   list-style-type: none;
-
+  margin-left: 42px;
   margin-bottom: 28px;
+  max-width: 80%;
 }
 br {
   line-height: 2;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.italics {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+}
+
 .img {
   z-index: 0;
   display: none;
-  height: 70%;
+  height: 60%;
   left: 50%;
   opacity: 0.9;
   position: fixed;
-  top: 15%;
+  top: 29%;
 }
 .blockquote {
   padding: 10px;
@@ -182,11 +205,8 @@ i {
   margin: 100px 0;
 }
 
-.container p {
-  width: 60%;
-}
-.section {
-  margin-top: 200px;
+.project_right p {
+  width: 85%;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -210,8 +230,7 @@ i {
 
 .project_right {
   margin-left: 32%;
-  margin-bottom: 10vh;
-  overflow: hidden;
+  margin-bottom: 65vh;
 }
 .project_nav {
   height: 70vh;
@@ -220,10 +239,20 @@ i {
   justify-content: space-between;
 }
 
+#project_overview {
+  width: 45%;
+}
+
 .project_description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  line-height: 1.75;
+}
+
+.project_description p {
+  max-width: 400px;
+  font-size: 14px;
 }
 
 .project_img {
@@ -234,7 +263,7 @@ i {
   width: 100%;
   max-height: 60vh;
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 24px;
 }
 
 /* -------------------------- project cover images -------------------------- */
@@ -265,11 +294,25 @@ i {
   .index h2 {
     font-size: 24px;
   }
+  .project_description {
+    margin-top: 16px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #project_overview {
+    margin: 32px 0 0 0;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   #particles-js {
     display: none;
+  }
+
+  p {
+    line-height: 2;
   }
 
   .content {
@@ -304,6 +347,11 @@ i {
   }
   .content_wrapper p {
     width: 100%;
+  }
+
+  #project_overview {
+    margin: 32px 0 0 0;
+    width: 80%;
   }
 }
 
